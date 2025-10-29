@@ -1,14 +1,13 @@
 ---
-layout: page
-title: POIs List
-permalink: /pois/
-
+layout: default
+title: Αναρριχητικά Πεδία (Λίστα)
 ---
 
+# 🧗‍♂️ Αναρριχητικά Πεδία
+
+{% assign items = site.pois | sort: 'title' %}
 <ul>
-  {% for p in site.pois %}
-    <li>
-      <a href="{{ p.url | relative_url}}">{{ p.title }}</a>
-    </li>
-  {% endfor %}
+{% for poi in items %}
+  <li><a href="{{ poi.url | relative_url }}">{{ poi.title }}</a></li>
+{% endfor %}
 </ul>
