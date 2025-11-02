@@ -3,6 +3,7 @@ layout: page
 title: Σχετικά
 permalink: /about/
 ---
+![banner]({{ site.baseurl }}/assets/img/banner2_new.jpg)
 
 # Αναρριχητικά Πεδία στην Ελλάδα
 
