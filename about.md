@@ -3,6 +3,7 @@ layout: page
 title: Σχετικά
 permalink: /about/
 ---
+
 ![banner]({{ '/assets/img/banner%20new2.jpg' | relative_url }})
 
 <div style="margin:1.25rem 0 2rem; padding:1rem 1.25rem; text-align:center; font-size:1.25rem; font-weight:700; font-style:italic; line-height:1.5; border-radius:14px; background:rgba(0,0,0,0.04); text-shadow:0 2px 6px rgba(0,0,0,0.18);">
