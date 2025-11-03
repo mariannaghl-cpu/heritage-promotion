@@ -1,5 +1,5 @@
 ---
-layout: poi.html
+layout: poi
 wikidatum: Q136464154
 title: Μακράδες (Κέρκυρα)
 ---
