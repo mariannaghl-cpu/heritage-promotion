@@ -87,3 +87,18 @@ function get_json_value(json_key, data){
 }
 
 get_wikidatum(wikidatum);
+
+// ΕΙΚΟΝΑ (Wikidata property P18 → Wikimedia Commons)
+try {
+  var img = entity.claims && entity.claims.P18
+    ? entity.claims.P18[0].mainsnak.datavalue.value
+    : null;
+
+  if (img && document.getElementById('wikidata_img')) {
+    // Χρησιμοποιούμε το Special:FilePath όπως στο demo του Ρίγγα
+    var src = 'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(img);
+    document.getElementById('wikidata_img').setAttribute('src', src);
+  }
+} catch (e) {
+  console.log('No P18 image found for', QID);
+}
