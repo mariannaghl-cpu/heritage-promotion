@@ -3,7 +3,7 @@ layout: poi
 wikidatum: Q136464154
 title: Μακράδες (Κέρκυρα)
 ---
-**Φωτογραφία** (/assets/img/Makrades1.jpg)
+**Φωτογραφία** [(/assets/img/Makrades1.jpg)]
 
 
  
