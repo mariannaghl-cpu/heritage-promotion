@@ -43,29 +43,15 @@ function get_wikidatum(id){
 }
 
 function get_thumbnail(photoname, size){
-    photoname = photoname.replaceAll(' ', '_');
+    photoname = photoname.replace(/ /g, '_');
     console.log('Getting '+size+'px thumb of: ', photoname);
-    // WikiMedia API based:
-    let url = `https://api.wikimedia.org/core/v1/commons/file/File:${photoname}`;
-    var jqxhr = $.getJSON( url, function(data) {
-        let credit = get_json_value(['latest','user','name'], data);
-        // console.log('Photo credit: ', credit);
-
-        let thumbname = get_json_value(['thumbnail','url'], data);
-        if ( thumbname ){
-            let thumbparts = thumbname.split('/');
-            thumbparts.pop();
-            thumbname = thumbparts.join('/');
-            thumbname += ('/'+size+'px-'+photoname);
-            console.log(thumbname);
-            $('#wikidata_img').attr('src', thumbname);
-        }
-    })
-    .fail(function() {
-        console.log( "error" );
-    });
-
-
+    
+    // ΣΩΣΤΟ URL FORMAT:
+    let thumbUrl = `https://commons.wikimedia.org/wiki/Special:FilePath/${photoname}?width=${size}`;
+    
+    console.log('Correct Thumbnail URL:', thumbUrl);
+    $('#wikidata_img').attr('src', thumbUrl);
+    $('#wikidata_img').show();
 }
 
 function get_first_upper(value){
