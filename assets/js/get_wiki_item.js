@@ -34,6 +34,7 @@ function get_wikidatum(id){
 
           let image = get_json_value(['entities',id,'claims','P18', 0,'mainsnak', 'datavalue', 'value'], data);
           get_thumbnail(image, 1000);
+        console.log("RAW IMAGE NAME FROM API:", image);
 
         })
         .fail(function( jqxhr, textStatus, error ) {
