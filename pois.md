@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Αναρριχητικά πεδίο
+title: Αναρριχητικά πεδία
 permalink: /pois/
 
 ---
