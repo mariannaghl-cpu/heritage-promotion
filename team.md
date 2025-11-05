@@ -14,8 +14,6 @@ permalink: /team/  # Ορίζει το URL ως /team/
 
 Το έργο αυτό αναπτύσσεται στο πλαίσιο του μαθήματος **«Εργαλεία Προβολής Πολιτιστικού και Τουριστικού Προϊόντος»**, στο ΠΜΣ **«Ψηφιακές Εφαρμογές και Καινοτομία»**
 
----
-
 <hr style="margin:2.5rem 0">
 
 <div class="social-wrap" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
